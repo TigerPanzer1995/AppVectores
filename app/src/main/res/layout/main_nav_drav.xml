@@ -80,7 +80,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Corte del día"
+            android:text="Descarga de información"
             android:padding="12dp"
             android:layout_marginStart="16dp"/>
 
@@ -88,7 +88,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="48dp"
-            android:src="@drawable/ic_cortedia"/>
+            android:src="@drawable/ic_des"/>
 
     </LinearLayout>
 
