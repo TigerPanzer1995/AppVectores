@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppVectores">
-        <activity android:name=".CorteDia"></activity>
+        <activity android:name=".FormularioCampo"></activity>
+        <activity android:name=".CorteDia" />
         <activity android:name=".Formulario" />
         <activity android:name=".Home" />
         <activity android:name=".Login" />

@@ -14,14 +14,268 @@
         <include
             layout="@layout/main_toolbar"/>
 
-        <TextView
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registro de formulario"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Localidad:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"/>
+
+            <EditText
+                android:id="@+id/xmltxtLocalidad"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese la localidad a trabajar" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Municipio:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"/>
+
+            <EditText
+                android:id="@+id/xmltxtMunicipio"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese el mpo a trabajar" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"/>
+
+            <EditText
+                android:id="@+id/xmltxtVeracruz"
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese el edo a trabajar" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jurisdicción:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"/>
+
+            <EditText
+                android:id="@+id/xmltxtJurisdicion"
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:hint="N° JS" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ciclo:"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="40dp"/>
+            <EditText
+                android:id="@+id/xmltxtCiclo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese ciclo"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cve Jefe Bgda:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"/>
+
+            <EditText
+                android:id="@+id/xmltxtCveJefeBrigada"
+                android:layout_width="266dp"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese clave jefe brigada" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cve Jefe Sector:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"/>
+
+            <EditText
+                android:id="@+id/xmltxtcveJefeSector"
+                android:layout_width="253dp"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese el mpo a trabajar" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estrategia:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"/>
+
+            <EditText
+                android:id="@+id/xmltxtEstrategia"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese la estrategia" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cve Elemento:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"/>
+
+            <EditText
+                android:id="@+id/xmltxtClaveElemento"
+                android:layout_width="267dp"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese su clave" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Larvicida:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"/>
+
+            <EditText
+                android:id="@+id/xmltxtLarvicida"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese el larvicida a usar" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Formulario en construcción :s"
-            android:textSize="50sp"
-            android:textAlignment="center"
-            android:gravity="center"
-            android:textStyle="bold"/>
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Registrar "
+                android:id="@+id/xmlbtninidia"
+                android:layout_marginStart="5dp"/>
+
+            <Button
+                android:id="@+id/xmlbtnformulariocampo"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Formulario"
+                android:layout_marginStart="140dp"
+                android:onClick="accionFormulari"/>
+
+        </LinearLayout>
+
+
     </LinearLayout>
 
     <RelativeLayout
