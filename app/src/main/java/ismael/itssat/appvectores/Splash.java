@@ -18,6 +18,7 @@ public class Splash extends AppCompatActivity {
 
         barraCargaSp =findViewById(R.id.barraCarga);
         ObjectAnimator.ofInt(barraCargaSp,"progress",100).setDuration(5000).start();
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

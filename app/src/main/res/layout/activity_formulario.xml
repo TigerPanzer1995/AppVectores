@@ -178,7 +178,7 @@
                 android:id="@+id/xmltxtcveJefeSector"
                 android:layout_width="253dp"
                 android:layout_height="wrap_content"
-                android:hint="Ingrese el mpo a trabajar" />
+                android:hint="Ingrese la clave jefe sector" />
 
 
         </LinearLayout>
