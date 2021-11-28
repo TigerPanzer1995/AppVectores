@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Corte del día en construcción :s"
+            android:text="Corte del día en construcción :s prueba GitHub"
             android:textSize="50sp"
             android:textAlignment="center"
             android:gravity="center"

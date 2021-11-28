@@ -223,7 +223,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
-                        android:hint="S/L" />
+                        android:hint="S/L"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -319,11 +320,13 @@
                         android:textSize="15sp"
                         android:textStyle="bold"
                         android:text="Tratados:"/>
+
                     <EditText
-                        android:layout_marginStart="5sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:hint="Tratados"/>
+                        android:layout_marginStart="5sp"
+                        android:hint="Tratados"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                     <TextView
                         android:layout_marginStart="55dp"
