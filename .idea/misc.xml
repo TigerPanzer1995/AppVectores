@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/ISC. CELSO HV/StudioProjects/AppVectores/app/src/main/res/layout/activity_corte_dia.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/ISC. CELSO HV/StudioProjects/AppVectores/app/src/main/res/layout/activity_corte_dia.xml" value="0.2" />
+        <entry key="..\:/Users/ISC. CELSO HV/StudioProjects/AppVectores/app/src/main/res/layout/activity_formulario.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/ISC. CELSO HV/StudioProjects/AppVectores/app/src/main/res/layout/activity_formulario_campo.xml" value="0.25" />
+        <entry key="..\:/Users/ISC. CELSO HV/StudioProjects/AppVectores/app/src/main/res/layout/activity_home.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/ISC. CELSO HV/StudioProjects/AppVectores/app/src/main/res/layout/activity_login.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/ISC. CELSO HV/StudioProjects/AppVectores/app/src/main/res/layout/main_nav_drav.xml" value="0.27291666666666664" />
       </map>
     </option>
   </component>

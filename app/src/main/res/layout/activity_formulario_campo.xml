@@ -109,6 +109,7 @@
                         android:textStyle="bold" />
 
                     <EditText
+                        android:inputType="number"
                         android:id="@+id/xmlediCveSectorFC"
                         android:layout_width="280dp"
                         android:layout_height="wrap_content"
@@ -133,11 +134,12 @@
                         android:textStyle="bold" />
 
                     <EditText
+                        android:inputType="number"
                         android:id="@+id/xmledicveManzFC"
                         android:layout_width="261dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
-                        android:hint="Ingrese el domicilio" />
+                        android:hint="Ingrese la clave de manzana" />
 
                 </LinearLayout>
 
@@ -205,7 +207,8 @@
                         android:textStyle="bold" />
 
                     <EditText
-                        android:id="@+id/xmttxtC_L"
+                        android:inputType="number"
+                        android:id="@+id/xmltxtC_L"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
@@ -219,6 +222,7 @@
                         android:textStyle="bold" />
 
                     <EditText
+                        android:inputType="number"
                         android:id="@+id/xmltxtS_L"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -234,6 +238,7 @@
                         android:textStyle="bold" />
 
                     <EditText
+                        android:inputType="number"
                         android:id="@+id/xmltxtNOFC"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -271,6 +276,7 @@
                         android:textStyle="bold"
                         android:text="No tratados:"/>
                     <EditText
+                        android:inputType="number"
                         android:id="@+id/xmltxtNotrtFC"
                         android:layout_marginStart="5sp"
                         android:layout_width="wrap_content"
@@ -286,6 +292,7 @@
                         android:textStyle="bold"
                         android:text="Controlados:"/>
                     <EditText
+                        android:inputType="number"
                         android:id="@+id/xmltxtCtrlFC"
                         android:layout_marginStart="5sp"
                         android:layout_width="wrap_content"
@@ -301,6 +308,7 @@
                         android:textStyle="bold"
                         android:text="Eliminados:"/>
                     <EditText
+                        android:inputType="number"
                         android:id="@+id/xmltxtElimFC"
                         android:layout_marginStart="5sp"
                         android:layout_width="wrap_content"
@@ -322,6 +330,8 @@
                         android:text="Tratados:"/>
 
                     <EditText
+                        android:inputType="number"
+                        android:id="@+id/xmltvtratadosfc"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5sp"
@@ -337,6 +347,7 @@
                         android:textStyle="bold"
                         android:text="Revisados:"/>
                     <EditText
+                        android:inputType="number"
                         android:id="@+id/xmltxtReviisados"
                         android:layout_marginStart="5sp"
                         android:layout_width="wrap_content"
@@ -358,6 +369,7 @@
                         android:textStyle="bold"
                         android:text="Depositos positivos:"/>
                     <EditText
+                        android:inputType="number"
                         android:id="@+id/xmltxtdepposFC"
                         android:layout_marginStart="5sp"
                         android:layout_width="wrap_content"
@@ -373,6 +385,7 @@
                         android:textStyle="bold"
                         android:text="Larvicida utilizado:"/>
                     <EditText
+                        android:inputType="number"
                         android:id="@+id/xmltxtLarvuFC"
                         android:layout_marginStart="5sp"
                         android:layout_width="wrap_content"
@@ -394,6 +407,7 @@
                         android:textStyle="bold"
                         android:text="Vol. Agua Trat:"/>
                     <EditText
+                        android:inputType="number"
                         android:id="@+id/xmltxtvatFC"
                         android:layout_marginStart="5sp"
                         android:layout_width="wrap_content"
@@ -409,6 +423,8 @@
                         android:textStyle="bold"
                         android:text="Núm. de habits:"/>
                     <EditText
+                        android:inputType="number"
+                        android:id="@+id/xmltvnumhab"
                         android:layout_marginStart="5sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -435,6 +451,7 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
                     <Button
+                        android:onClick="limpiarformulariocampo"
                         android:layout_margin="5dp"
                         android:layout_marginBottom="5dp"
                         android:id="@+id/xmlbtnClearForFC"
