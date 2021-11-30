@@ -9,18 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppVectores">
-        <activity android:name=".FormularioCampo"
+        <activity
+            android:name=".FormularioCampoB"
+            android:exported="false" />
+        <activity
+            android:name=".FormularioCampo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CorteDia"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".CorteDia"
+        <activity
+            android:name=".Formulario"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Splash"
             android:screenOrientation="portrait">
-
-        </activity>
-        <activity android:name=".Formulario" android:screenOrientation="portrait">
-
-        </activity>
-        <activity android:name=".Home" android:screenOrientation="portrait"></activity>
-        <activity android:name=".Login" android:screenOrientation="portrait"></activity>
-        <activity android:name=".Splash" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -2,6 +2,7 @@ package ismael.itssat.appvectores;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -64,5 +65,10 @@ public class FormularioCampo extends AppCompatActivity {
         tvLarvUt.setText("");
         tvVolAaT.setText("");
         tvNumHab.setText("");
+    }
+    public void contForm (View view){
+        Intent intent = new Intent(this,FormularioCampoB.class);
+        startActivity(intent);
+        finish();
     }
 }

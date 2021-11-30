@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".FormularioCampoB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/back_toolbar"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Formulario de campo"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00BCD4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DEPOSITOS"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="No tratados:"/>
+            <EditText
+                android:inputType="number"
+                android:id="@+id/xmltxtNotrtFC"
+                android:layout_marginStart="5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="NT"/>
+
+            <TextView
+                android:layout_marginStart="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="Controlados:"/>
+            <EditText
+                android:inputType="number"
+                android:id="@+id/xmltxtCtrlFC"
+                android:layout_marginStart="5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Ctrl"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="Eliminados:"/>
+            <EditText
+                android:inputType="number"
+                android:id="@+id/xmltxtElimFC"
+                android:layout_marginStart="5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Elim"/>
+
+
+            <TextView
+                android:layout_marginStart="74dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="Tratados:"/>
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/xmltvtratadosfc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5sp"
+                android:hint="Tratados"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="Revisados:"/>
+            <EditText
+                android:inputType="number"
+                android:id="@+id/xmltxtReviisados"
+                android:layout_marginStart="5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Rev"/>
+
+            <TextView
+                android:layout_marginStart="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="Depositos positivos:"/>
+            <EditText
+                android:inputType="number"
+                android:id="@+id/xmltxtdepposFC"
+                android:layout_marginStart="5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="DP"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="Larvicida utilizado:"/>
+            <EditText
+                android:inputType="number"
+                android:id="@+id/xmltxtLarvuFC"
+                android:layout_marginStart="5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="LU"/>
+            <TextView
+                android:layout_marginStart="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="Vol. Agua Trat:"/>
+            <EditText
+                android:inputType="number"
+                android:id="@+id/xmltxtvatFC"
+                android:layout_marginStart="5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="VAT"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="Núm. de habits:"/>
+            <EditText
+                android:inputType="number"
+                android:id="@+id/xmltvnumhab"
+                android:layout_marginStart="5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="NúmHab"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_margin="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/xmlbtnGuardarForFC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guardar formulario"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_margin="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/xmlbtnClearForFC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Limpiar formulario"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_margin="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/xmlbtnNoGuardForFC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salir sin guardar"/>
+
+
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
+
+
+
+
+
