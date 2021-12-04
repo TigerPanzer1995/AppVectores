@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
+    android:background="#D4C19C"
     tools:context=".Formulario">
 
     <LinearLayout
@@ -25,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:text="Registro de formulario"
                 android:textStyle="bold"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:gravity="center"/>
@@ -33,7 +34,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="1dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -43,10 +44,11 @@
                 android:layout_height="wrap_content"
                 android:text="Localidad:"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:layout_marginStart="5dp"/>
 
             <EditText
+                android:textSize="15sp"
                 android:id="@+id/xmltxtLocalidad"
                 android:layout_width="305dp"
                 android:layout_height="wrap_content"
@@ -56,7 +58,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -66,10 +68,11 @@
                 android:layout_height="wrap_content"
                 android:text="Municipio:"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:layout_marginStart="5dp"/>
 
             <EditText
+                android:textSize="15sp"
                 android:id="@+id/xmltxtMunicipio"
                 android:layout_width="305dp"
                 android:layout_height="wrap_content"
@@ -89,10 +92,11 @@
                 android:layout_height="wrap_content"
                 android:text="Estado:"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:layout_marginStart="5dp"/>
 
             <EditText
+                android:textSize="15sp"
                 android:id="@+id/xmltxtVeracruz"
                 android:layout_width="333dp"
                 android:layout_height="wrap_content"
@@ -112,10 +116,11 @@
                 android:layout_height="wrap_content"
                 android:text="Jurisdicción:"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:layout_marginStart="5dp"/>
 
             <EditText
+                android:textSize="15sp"
                 android:inputType="number"
                 android:id="@+id/xmltxtJurisdicion"
                 android:layout_width="76dp"
@@ -126,10 +131,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ciclo:"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textColor="@color/black"
                 android:layout_marginStart="20dp"/>
             <EditText
+                android:textSize="15sp"
                 android:id="@+id/xmltxtCiclo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -149,10 +155,11 @@
                 android:layout_height="wrap_content"
                 android:text="Cve Jefe Bgda:"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:layout_marginStart="5dp"/>
 
             <EditText
+                android:textSize="15sp"
                 android:id="@+id/xmltxtCveJefeBrigada"
                 android:layout_width="266dp"
                 android:layout_height="wrap_content"
@@ -172,10 +179,11 @@
                 android:layout_height="wrap_content"
                 android:text="Cve Jefe Sector:"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:layout_marginStart="5dp"/>
 
             <EditText
+                android:textSize="15sp"
                 android:id="@+id/xmltxtcveJefeSector"
                 android:layout_width="253dp"
                 android:layout_height="wrap_content"
@@ -195,10 +203,11 @@
                 android:layout_height="wrap_content"
                 android:text="Estrategia:"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:layout_marginStart="5dp"/>
 
             <EditText
+                android:textSize="15sp"
                 android:id="@+id/xmltxtEstrategia"
                 android:layout_width="305dp"
                 android:layout_height="wrap_content"
@@ -218,10 +227,11 @@
                 android:layout_height="wrap_content"
                 android:text="Cve Elemento:"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:layout_marginStart="5dp"/>
 
             <EditText
+                android:textSize="15sp"
                 android:id="@+id/xmltxtClaveElemento"
                 android:layout_width="267dp"
                 android:layout_height="wrap_content"
@@ -241,10 +251,11 @@
                 android:layout_height="wrap_content"
                 android:text="Larvicida:"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:layout_marginStart="5dp"/>
 
             <EditText
+                android:textSize="15sp"
                 android:inputType="number"
                 android:id="@+id/xmltxtLarvicida"
                 android:layout_width="305dp"
@@ -265,6 +276,7 @@
                 android:layout_height="50dp"
                 android:text="Registrar "
                 android:id="@+id/xmlbtninidia"
+                android:onClick="validaBtnRegistrar"
                 android:layout_marginStart="5dp"/>
 
             <Button
@@ -285,8 +297,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:background="@color/white">
-        <include
-            layout="@layout/main_nav_drav"/>
+
+        <include layout="@layout/main_nav_drav" />
     </RelativeLayout>
 
 

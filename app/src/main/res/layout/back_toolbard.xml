@@ -9,11 +9,10 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="ClickMenu"
-        android:src="@drawable/ic_menu"/>
+        android:onClick="backActividaddos"
+        android:src="@drawable/ic_volver"/>
 
     <TextView
-
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -21,11 +20,8 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:textAlignment="center"
-        android:textColor="@color/black"/>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_more"/>
+        android:textColor="#636363"/>
+
 
 
 </LinearLayout>

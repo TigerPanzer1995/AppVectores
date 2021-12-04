@@ -9,10 +9,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Formulario extends AppCompatActivity {
     DrawerLayout drawerLayout;
-    Button btnFormularioCampo;
+    Button btnFormularioCampo, btnRegistrar;
     private EditText txtLocalidad, txtMunicipio, txtEstado, txtJuris, txtCiclo,
     txtJfeBrig, txtJfeSec, txtEstrategia, txtCveElemento, txtLarvicida;
 
@@ -24,6 +25,8 @@ public class Formulario extends AppCompatActivity {
         //asignamos la variable
         drawerLayout= findViewById(R.id.drawer_layout);
         btnFormularioCampo = findViewById(R.id.xmlbtnformulariocampo);
+
+        btnRegistrar = findViewById(R.id.xmlbtninidia);
 
         txtLocalidad = findViewById(R.id.xmltxtLocalidad);
         txtMunicipio = findViewById(R.id.xmltxtMunicipio);
@@ -73,6 +76,40 @@ public class Formulario extends AppCompatActivity {
     public void accionFormulari(View view){
         ClickFormularioCampo(this, FormularioCampo.class);
     }
+
+
+
+    //*******************************************************************************************************************
+    //** VALIDACIÓN DE CAMPOS DE TEXTO NO VAYAN VACIOS ****************************************************************++
+    //*******************************************************************************************************************
+
+    public void validaBtnRegistrar(View view){
+        if(txtLocalidad.getText().toString().equals("")){
+            Toast.makeText(this, "Todos los campos deben ser llenados", Toast.LENGTH_SHORT).show();
+        }else if(txtMunicipio.getText().toString().equals("")){
+            Toast.makeText(this, "Todos los campos deben ser llenados", Toast.LENGTH_SHORT).show();
+        }else if (txtEstado.getText().toString().equals("")){
+            Toast.makeText(this, "Todos los campos deben ser llenados", Toast.LENGTH_SHORT).show();
+        }else if (txtJuris.getText().toString().equals("")){
+            Toast.makeText(this, "Todos los campos deben ser llenados", Toast.LENGTH_SHORT).show();
+        }else if (txtCiclo.getText().toString().equals("")){
+            Toast.makeText(this, "Todos los campos deben ser llenados", Toast.LENGTH_SHORT).show();
+        }else if (txtJfeBrig.getText().toString().equals("")){
+            Toast.makeText(this, "Todos los campos deben ser llenados", Toast.LENGTH_SHORT).show();
+        }else if (txtJfeSec.getText().toString().equals("")){
+            Toast.makeText(this, "Todos los campos deben ser llenados", Toast.LENGTH_SHORT).show();
+        }else if(txtEstrategia.getText().toString().equals("")){
+            Toast.makeText(this, "Todos los campos deben ser llenados", Toast.LENGTH_SHORT).show();
+        }else if (txtCveElemento.getText().toString().equals("")){
+            Toast.makeText(this, "Todos los campos deben ser llenados", Toast.LENGTH_SHORT).show();
+        }else if(txtLarvicida.getText().toString().equals("")){
+            Toast.makeText(this, "Todos los campos deben ser llenados", Toast.LENGTH_SHORT).show();
+        }else {
+            Toast.makeText(this, "Podemos seguir programando", Toast.LENGTH_SHORT).show();
+
+            //aquí irá el botono a la base de datos
+        }
+    }//fin del metodo validaBtnRegistrar
 
 
 

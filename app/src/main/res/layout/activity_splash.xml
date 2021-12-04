@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#AEB4B3"
+    android:background="#D4C19C"
     tools:context=".Splash">
 
 
@@ -38,7 +38,7 @@
             android:id="@+id/idapp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#903714"
+            android:textColor="#9D2449"
             android:textStyle="bold"
             android:text="@string/appvectores"
             android:textSize="40sp"
