@@ -7,15 +7,22 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
+
+import java.util.ArrayList;
 
 public class Formulario extends AppCompatActivity {
     DrawerLayout drawerLayout;
     Button btnFormularioCampo, btnRegistrar;
     private EditText txtLocalidad, txtMunicipio, txtEstado, txtJuris, txtCiclo,
     txtJfeBrig, txtJfeSec, txtEstrategia, txtCveElemento, txtLarvicida;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +34,6 @@ public class Formulario extends AppCompatActivity {
         btnFormularioCampo = findViewById(R.id.xmlbtnformulariocampo);
 
         btnRegistrar = findViewById(R.id.xmlbtninidia);
-
         txtLocalidad = findViewById(R.id.xmltxtLocalidad);
         txtMunicipio = findViewById(R.id.xmltxtMunicipio);
         txtEstado = findViewById(R.id.xmltxtVeracruz);
@@ -38,6 +44,10 @@ public class Formulario extends AppCompatActivity {
         txtEstrategia = findViewById(R.id.xmltxtEstrategia);
         txtCveElemento = findViewById(R.id.xmltxtClaveElemento);
         txtLarvicida = findViewById(R.id.xmltxtLarvicida);
+
+
+
+
     }//fin del metodo oncreate
 
     public void ClickMenu(View view){

@@ -145,53 +145,16 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <Spinner
+                        android:spinnerMode="dialog"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="70dp"
-                        android:text="L/b:"
-                        android:textColor="@color/black"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                    <RadioGroup
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <RadioButton
-                            android:id="@+id/xmlradioButtonLB"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp" />
-
-                    </RadioGroup>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="150dp"
-                        android:text="E/P:"
-                        android:textColor="@color/black"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                    <RadioGroup
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <RadioButton
-                            android:id="@+id/xmlradioButtonEP"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp" />
-
-                    </RadioGroup>
-
+                        android:id="@+id/spinnerStatusXML"/>
 
                 </LinearLayout>
 

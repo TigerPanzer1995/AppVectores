@@ -8,7 +8,9 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class FormularioCampo extends AppCompatActivity {
@@ -16,6 +18,8 @@ public class FormularioCampo extends AppCompatActivity {
     private EditText tvdom,tvcvesector, cvemanzana, tvCL,tvSL, tvNo,
             tvnoTratados, tvcontrolado, tvElim, tvTratados,
             tvRevisados, tvDepPos, tvLarvUt, tvVolAaT, tvNumHab;  //variables que capturan los datos ingresados
+
+    private Spinner spinnerStatus ;
 
     private TextView tvContadorFormulario ; //guarda el número de formulario
 
@@ -44,6 +48,13 @@ public class FormularioCampo extends AppCompatActivity {
         tvLarvUt = findViewById(R.id.xmltxtLarvuFC);
         tvVolAaT = findViewById(R.id.xmltxtvatFC);
         tvNumHab = findViewById(R.id.xmltvnumhab);
+
+
+        spinnerStatus = findViewById(R.id.spinnerStatusXML);
+
+        String [] opcionesEspacios = {"Espacio público","Lote baldio"};
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,R.layout.support_simple_spinner_dropdown_item,opcionesEspacios);
+        spinnerStatus.setAdapter(adapter);
 
 
     }
