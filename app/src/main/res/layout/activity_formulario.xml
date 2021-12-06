@@ -272,6 +272,7 @@
             android:layout_marginTop="10dp">
 
             <Button
+                android:visibility="visible"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:text="Registrar "
@@ -280,6 +281,7 @@
                 android:layout_marginStart="5dp"/>
 
             <Button
+                android:visibility="invisible"
                 android:id="@+id/xmlbtnformulariocampo"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"

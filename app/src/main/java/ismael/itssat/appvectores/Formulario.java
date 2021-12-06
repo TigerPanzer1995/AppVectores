@@ -15,6 +15,8 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import ismael.itssat.appvectores.basededatos.SqlOpenHelper;
+
 public class Formulario extends AppCompatActivity {
     DrawerLayout drawerLayout;
     Button btnFormularioCampo, btnRegistrar;
@@ -22,6 +24,7 @@ public class Formulario extends AppCompatActivity {
     txtJfeBrig, txtJfeSec, txtEstrategia, txtCveElemento, txtLarvicida;
 
 
+    private SqlOpenHelper myDBINICIO;
 
 
     @Override
@@ -44,6 +47,8 @@ public class Formulario extends AppCompatActivity {
         txtEstrategia = findViewById(R.id.xmltxtEstrategia);
         txtCveElemento = findViewById(R.id.xmltxtClaveElemento);
         txtLarvicida = findViewById(R.id.xmltxtLarvicida);
+
+        myDBINICIO = new SqlOpenHelper(this);
 
 
 
@@ -115,7 +120,18 @@ public class Formulario extends AppCompatActivity {
         }else if(txtLarvicida.getText().toString().equals("")){
             Toast.makeText(this, "Todos los campos deben ser llenados", Toast.LENGTH_SHORT).show();
         }else {
-            Toast.makeText(this, "Podemos seguir programando", Toast.LENGTH_SHORT).show();
+            Boolean validaFormularioInicioDia = myDBINICIO.insertaDatosFormularioInicioDia(txtLocalidad.getText().toString(),txtMunicipio.getText().toString()
+            ,txtEstado.getText().toString(),txtJuris.getText().toString(),txtCiclo.getText().toString(),txtJfeBrig.getText().toString(),txtJfeSec.getText().toString()
+            ,txtEstrategia.getText().toString(),txtCveElemento.getText().toString(), txtLarvicida.getText().toString());
+
+            if (validaFormularioInicioDia==false){
+                Toast.makeText(this, "Error al guardar los datos, reintente de nuevo", Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(this, "Datos almacenado con éxito", Toast.LENGTH_SHORT).show();
+                btnRegistrar.setVisibility(View.INVISIBLE);
+                Toast.makeText(this, "Ya puede comenzar el formulario", Toast.LENGTH_SHORT).show();
+                btnFormularioCampo.setVisibility(View.VISIBLE);
+            }
 
             //aquí irá el botono a la base de datos
         }
